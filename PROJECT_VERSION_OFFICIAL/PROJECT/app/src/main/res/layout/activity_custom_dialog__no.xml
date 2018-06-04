@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.project.CustomDialog_No">
+
+    <TextView
+        android:id="@+id/tvcustom_no"
+        android:layout_width="86dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Giải trí"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Spinner
+        android:id="@+id/spinnercustom_no"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintStart_toEndOf="@+id/tvcustom_no"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/edtmoneycustom_no"
+        android:layout_width="132dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="152dp"
+        android:hint="SỐ TIỀN"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtlaysuatcustom_no"
+        android:layout_width="125dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="152dp"
+        android:hint="LÃI SUẤT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_ghichunocustom"
+        android:layout_width="147dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="88dp"
+        android:hint="GHI CHÚ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcalendarcustom_no"
+        android:layout_width="133dp"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/btncalendarcustom_no"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="232dp"
+        android:layout_toLeftOf="@+id/btncalendarcustom_no"
+        android:layout_toStartOf="@+id/btncalendarcustom_no"
+        android:text="  "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcalendarcustomngtra_no"
+        android:layout_width="132dp"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/btncalendarcustom_no"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="292dp"
+        android:layout_toLeftOf="@+id/btncalendarcustom_no"
+        android:layout_toStartOf="@+id/btncalendarcustom_no"
+        android:text="  "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncalendarcustom_no"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btncancelcustom_no"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="228dp"
+        android:layout_toEndOf="@+id/edtmoneycustom_no"
+        android:layout_toRightOf="@+id/edtmoneycustom_no"
+        android:drawableLeft="@drawable/date"
+        android:text="Ngày Nợ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncalendarcustomngtra_no"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btncancelcustom_no"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/edtmoneycustom_no"
+        android:layout_toRightOf="@+id/edtmoneycustom_no"
+        android:drawableLeft="@drawable/date"
+        android:text="Ngày Trả"
+        app:layout_constraintBottom_toTopOf="@+id/btncancelcustom_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+    <Button
+        android:id="@+id/btncancelcustom_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btndeletecustom_no"
+        android:layout_alignBottom="@+id/btndeletecustom_no"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="356dp"
+        android:layout_toEndOf="@+id/btndeletecustom_no"
+        android:layout_toRightOf="@+id/btndeletecustom_no"
+        android:text="Cancel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndeletecustom_no"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignBaseline="@+id/btnupdatecustom_no"
+        android:layout_alignBottom="@+id/btnupdatecustom_no"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="356dp"
+        android:layout_toEndOf="@+id/btnupdatecustom_no"
+        android:layout_toRightOf="@+id/btnupdatecustom_no"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/txtcalendarcustom_no"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnupdatecustom_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvcustom_no"
+        android:layout_alignRight="@+id/tvcustom_no"
+        android:layout_below="@+id/edtmoneycustom_no"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="356dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.253"
+        app:layout_constraintStart_toEndOf="@+id/btncancelcustom_no"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

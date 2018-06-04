@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.project">
+    android:hardwareAccelerated="false"
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="APPOM"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.CAMERA" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+        <uses-feature android:name="android.hardware.camera" />
+        <uses-feature android:name="android.hardware.camera.autofocus" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DS_khoanchi" />
+        <activity android:name=".DS_khoanthu" />
+        <activity android:name=".themkhoanthu" />
+        <activity android:name=".themkhoanchi" />
+        <activity android:name=".CustomDialog_Thu" />
+        <activity android:name=".themkhoanno" />
+        <activity android:name=".DS_khoanno" />
+        <activity android:name=".CustomDialog_No" />
+        <activity android:name=".themkhoanvay" />
+        <activity android:name=".DS_khoanvay" />
+        <activity android:name=".CustomDialog_Vay" />
+        <activity android:name=".USER" />
+        <activity android:name=".CustomThongKe" />
+        <activity android:name=".BieuDoKhoanChi" />
+        <activity android:name=".BieuDoKhoanThu" />
+        <activity android:name=".BieuDoKhoanVay" />
+        <activity android:name=".BieuDoKhoanNo" />
+        <activity
+            android:name=".Khoanvay"
+            android:label="@string/title_activity_khoanvay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Khoanchi"
+            android:label="@string/title_activity_khoanchi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Khoanthu"
+            android:label="@string/title_activity_khoanthu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Khoanno"
+            android:label="@string/title_activity_khoanno"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.project.CustomDialog_Thu">
+
+    <TextView
+        android:id="@+id/tvcustom_thu"
+        android:layout_width="96dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:text="Giai tri"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnercustom_thu"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/tvcustom_thu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_ghichuthucustom"
+        android:layout_width="147dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:hint="NOTE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvcustom_thu" />
+
+
+    <EditText
+        android:id="@+id/edtmoneycustom_thu"
+        android:layout_width="147dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="152dp"
+        android:hint="MONEY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtcalendarcustom_thu"
+        android:layout_width="123dp"
+        android:layout_height="46dp"
+        android:layout_alignBottom="@+id/btncalendarcustom_thu"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/btncalendarcustom_thu"
+        android:layout_toStartOf="@+id/btncalendarcustom_thu"
+        android:text="  "
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtmoneycustom_thu" />
+
+    <Button
+        android:id="@+id/btncalendarcustom_thu"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btncancelcustom_thu"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="228dp"
+        android:layout_toEndOf="@+id/edtmoneycustom_thu"
+        android:layout_toRightOf="@+id/edtmoneycustom_thu"
+        android:drawableLeft="@drawable/date"
+        android:text="Date"
+        app:layout_constraintStart_toEndOf="@+id/txtcalendarcustom_thu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btncancelcustom_thu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btndeletecustom_thu"
+        android:layout_alignBottom="@+id/btndeletecustom_thu"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="324dp"
+        android:layout_toEndOf="@+id/btndeletecustom_thu"
+        android:layout_toRightOf="@+id/btndeletecustom_thu"
+        android:text="Cancel"
+        app:layout_constraintStart_toEndOf="@+id/btndeletecustom_thu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndeletecustom_thu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnupdatecustom_thu"
+        android:layout_alignBottom="@+id/btnupdatecustom_thu"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="324dp"
+        android:layout_toEndOf="@+id/btnupdatecustom_thu"
+        android:layout_toRightOf="@+id/btnupdatecustom_thu"
+        android:text="Delete"
+        app:layout_constraintEnd_toEndOf="@+id/txtcalendarcustom_thu"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnupdatecustom_thu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvcustom_thu"
+        android:layout_alignRight="@+id/tvcustom_thu"
+        android:layout_below="@+id/edtmoneycustom_thu"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="324dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btncancelcustom_thu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
